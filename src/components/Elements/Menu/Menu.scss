@@ -1,0 +1,23 @@
+@use 'theme/colors.scss' as *;
+@use 'theme/sizes.scss' as *;
+
+.menu-wrapper {
+    height: 100%;
+    background-color: $light-background;
+
+    padding: 0 20px;
+
+    .option {
+        padding: 10px;
+        background-color: $light-background;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        &.active,
+        &:hover {
+            background-color: $background;
+            border-radius: 4px;
+        }
+    }
+}

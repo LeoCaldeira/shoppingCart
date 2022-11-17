@@ -1,0 +1,22 @@
+@use 'theme/colors.scss' as *;
+@use 'theme/sizes.scss' as *;
+
+.layout-wrapper {
+    background-color: $light;
+    overflow: auto;
+
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+        'header header'
+        'menu content';
+
+    .header {
+        grid-area: header;
+    }
+
+    .menu {
+        grid-area: menu;
+    }
+}

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { ProductContext } from 'context/ProductContext'
+import { useState, useMemo } from 'react'
+import Home from 'components/Home/Home'
+import './App.scss'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [products, setProducts] = useState(['produto 1', 'produto 2', 'produto 3', 'produto 4'])
+
+    const productsProvider = useMemo(() => ({ products, setProducts }), [products, setProducts])
+    return (
+        <div className="App">
+            <Router>
+                <ProductContext.Provider value={productsProvider}>
+                    <Routes>
+                        <Route element={<Home />} path="/" exact />
+                        <Route element={<Home />} path="/home" exact />
+                    </Routes>
+                </ProductContext.Provider>
+            </Router>
+        </div>
+    )
 }
 
-export default App;
+export default App
