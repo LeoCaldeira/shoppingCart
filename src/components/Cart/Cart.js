@@ -1,19 +1,66 @@
 import Header from 'components/Elements/Header/Header'
 import { ProductContext } from 'context/ProductContext'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Cart.scss'
 
 const Cart = () => {
     const { products, setProducts } = useContext(ProductContext)
-    console.log('products', products) //TODO remove log
+    const [totalPrice, setTotalPrice] = useState(0)
+
+    const handleDeleteItem = (productId) => {
+        const newCart = [...products]
+        let newProduct = products.filter((item) => item.id === productId)[0]
+        let itemIndex = products.findIndex((item) => item.id === productId)
+        if (itemIndex !== -1) {
+            if (newProduct?.count > 1) {
+                newCart.splice(itemIndex, 1, {
+                    ...newProduct,
+                    count: newProduct?.count - 1,
+                })
+            } else {
+                newCart.splice(itemIndex, 1)
+            }
+        }
+
+        setProducts([...newCart])
+    }
+
+    const handleAddItem = (productId) => {
+        const newCart = [...products]
+        let newProduct = products.filter((item) => item.id === productId)[0]
+        let itemIndex = products.findIndex((item) => item.id === productId)
+        if (itemIndex !== -1) {
+            newCart.splice(itemIndex, 1, {
+                ...newProduct,
+                count: newProduct?.count + 1,
+            })
+        }
+
+        setProducts([...newCart])
+    }
+
+    useEffect(() => {
+        let valorTotal = 0
+        products.forEach((product) => (valorTotal += product.count * product.price))
+
+        setTotalPrice(valorTotal)
+    }, [products])
+
     return (
         <div className="cart-wrapper">
             <Header noCart />
             <div className="cart-content">
-                <h1> Produtos: </h1>
-                {products.map((product) => {
-                    return <CartCard product={product} />
-                })}
+                <div>
+                    <h1> Produtos: </h1>
+                    {products.map((product) => {
+                        return (
+                            <div key={product.id}>
+                                <CartCard {...{ product, handleDeleteItem, handleAddItem }} />
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className="total-value">Total a pagar: {totalPrice}</div>
             </div>
         </div>
     )
@@ -21,10 +68,11 @@ const Cart = () => {
 
 export default Cart
 
-const CartCard = (product) => {
-    console.log('product', product) //TODO remove log
+const CartCard = (props) => {
+    const { product, handleDeleteItem, handleAddItem } = props
+
     return (
-        <div>
+        <div className="cart-card-wrapper" key={product.id}>
             <div className="image-wrapper">
                 <img src={product.img} alt="" />
             </div>
@@ -32,12 +80,23 @@ const CartCard = (product) => {
                 <h2>{product.name}</h2>
                 <p>{product.description}</p>
             </div>
-            <p className="product-price">R$: {product.price},00</p>
             <div className="quantity-wrapper">
-                <div className="round">-</div>
-                <div className="quantity">{'$quantidade'}</div>
-                <div className="round">+</div>
+                <div className="round" onClick={() => handleDeleteItem(product.id)}>
+                    -
+                </div>
+                <div className="quantity">{product.count}</div>
+                <div className="round" onClick={() => handleAddItem(product.id)}>
+                    +
+                </div>
             </div>
+            <p className="product-price">
+                <span>R$ unidade</span>
+                R$: {product.price},00
+            </p>
+            <p className="product-price total">
+                <span> R$ total</span>
+                R$: {product.price * product.count},00
+            </p>
         </div>
     )
 }

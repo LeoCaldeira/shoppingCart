@@ -5,8 +5,115 @@
     background-color: $background;
     display: grid;
     grid-template-rows: 100px 1fr;
+    overflow: auto;
 
     .cart-content {
         padding: 20px 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .total-value {
+            font-size: 40px;
+            font-weight: 900;
+            color: $violet-900;
+        }
+    }
+}
+
+.cart-card-wrapper {
+    border: 3px solid rgb(248, 248, 248);
+    background-color: $light;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px 5px;
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1.2fr 1.8fr;
+    grid-gap: 30px;
+
+    .image-wrapper {
+        border: 2px solid $violet-100;
+        background-color: $light;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+
+        img {
+            padding: 10px;
+            max-height: 110px;
+        }
+    }
+
+    .item-infos {
+        max-width: 450px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        p {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 10px 0;
+        }
+    }
+
+    .quantity-wrapper {
+        display: flex;
+        align-items: center;
+        .round {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+
+            background-color: $yellow-600;
+            cursor: pointer;
+        }
+
+        .quantity {
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 10px;
+            background-color: $gray-300;
+            width: unset;
+        }
+    }
+
+    .product-price {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: $violet-900;
+
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 0;
+            color: $dark-800;
+            font-size: 16px;
+        }
+    }
+
+    .total {
+        font-size: 30px;
     }
 }

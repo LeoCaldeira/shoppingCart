@@ -4,14 +4,28 @@ import './Card.scss'
 
 const Card = (props) => {
     const { product } = props
-    const { setProducts } = useContext(ProductContext)
+    const { products, setProducts } = useContext(ProductContext)
 
     const handlePrice = (value, off) => {
         return value + (value * off) / 100
     }
 
     const addToCart = () => {
-        setProducts((products) => [...products, product])
+        const newCart = [...products]
+        let itemIndex = products.findIndex((item) => item.id === product.id)
+        if (itemIndex !== -1) {
+            newCart.splice(itemIndex, 1, {
+                ...product,
+                count: products[itemIndex]?.count + 1,
+            })
+        } else {
+            newCart.push({
+                ...product,
+                count: 1,
+            })
+        }
+
+        setProducts([...newCart])
     }
 
     return (

@@ -17,7 +17,9 @@ const Home = () => {
         <MainLayout>
             <div className="home-wrapper">
                 {allProducts.map((product) => (
-                    <Card product={product} />
+                    <div key={product.id}>
+                        <Card product={product} />
+                    </div>
                 ))}
             </div>
         </MainLayout>
