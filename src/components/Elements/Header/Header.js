@@ -1,13 +1,12 @@
 import { ProductContext } from 'context/ProductContext'
 import { Link, useNavigate } from 'react-router-dom'
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import { MdShoppingCart } from 'react-icons/md'
 import './Header.scss'
 
-const Header = (props) => {
+const Header = () => {
     const { products } = useContext(ProductContext)
     const navigate = useNavigate()
-    const {} = props
 
     return (
         <div className="header-wrapper">

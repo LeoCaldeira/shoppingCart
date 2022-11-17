@@ -1,6 +1,6 @@
 import Header from 'components/Elements/Header/Header'
 import Menu from 'components/Elements/Menu/Menu'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './MainLayout.scss'
 
 const MainLayout = (props) => {

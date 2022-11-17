@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ProductContext } from 'context/ProductContext'
 import { useState, useMemo } from 'react'
 import Home from 'components/Home/Home'

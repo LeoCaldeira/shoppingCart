@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Menu.scss'
 
-const Menu = (props) => {
-    const {} = props
+const Menu = () => {
     const navigate = useNavigate()
     const currentPath = window.location.href.split('/')[1]
 
