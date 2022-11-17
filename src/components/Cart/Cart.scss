@@ -1,0 +1,12 @@
+@use 'theme/colors.scss' as *;
+@use 'theme/sizes.scss' as *;
+
+.cart-wrapper {
+    background-color: $background;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+
+    .cart-content {
+        padding: 20px 40px;
+    }
+}

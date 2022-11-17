@@ -1,0 +1,237 @@
+{
+    "hardware": [
+        {
+            "name": "SSD 240 GB Kingston A400",
+            "description": "SATA, Leitura: 500MB/s e Gravação: 350MB/s - SA400S37/240G",
+            "id": 1,
+            "price": 200,
+            "qtd": 3,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/85197/85197_1484306076_gg.jpg"
+        },
+        {
+            "name": "Memória Gamer Husky Gaming",
+            "description": "8GB, 2666MHz, DDR4, CL19, Preto - HGMF001",
+            "id": 2,
+            "price": 250,
+            "qtd": 2,
+            "%off": 15,
+            "img": "https://images.kabum.com.br/produtos/fotos/114222/memoria-husky-8gb-2666mhz-ddr4-cl19-preto-hmr-d4826_1597862504_gg.jpg"
+        },
+        {
+            "name": "SSD 128 GB Husky Gaming",
+            "description": "2.5'', SATA III, Leitura: 570MB/s e Gravação: 500MB/s, Preto - HGML000",
+            "id": 3,
+            "price": 50,
+            "qtd": 1,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/113888/ssd-husky-128gb-sata-3-500mb-s-2-5-hss-st-120_1596746858_gg.jpg"
+        },
+        {
+            "name": "SSD 480 GB WD Green PC SN350",
+            "description": "PCIe, NVMe, Leitura: 2400MB/s e Gravação: 1650MB/s - WDS480G2G0C",
+            "id": 4,
+            "price": 300,
+            "qtd": 5,
+            "%off": 20,
+            "img": "https://images.kabum.com.br/produtos/fotos/147640/ssd-wd-green-pc-sn350-480gb-pcie-nvme-leitura-2400mb-s-escrita-900mb-s-wds480g2g0c_1612534888_gg.jpg"
+        },
+        {
+            "name": "Cooler Fan Rise Mode Energy",
+            "description": "3 Unidades, 120mm, ARGB, Preto - FN-02-RGB-5V",
+            "id": 5,
+            "price": 150,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/153647/cooler-fan-rise-mode-energy-3-unidades-120mm-argb-preto-fn-02-rgb-5v_1663768316_gg.jpg"
+        }
+    ],
+    "games": [
+        {
+            "name": "Console Microsoft Xbox Series S",
+            "description": "512GB, Branco - RRS-00006",
+            "id": 6,
+            "price": 2200,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/128561/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_gg.jpg"
+        },
+        {
+            "name": "Console Sony PlayStation 5 + FIFA 23",
+            "description": "Console + jogo",
+            "id": 7,
+            "price": 4500,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/386186/console-sony-playstation-5-fifa-23_1663161809_gg.jpg"
+        },
+        {
+            "name": "Jogo God of War Ragnarök",
+            "description": "Edição de Lançamento PS4",
+            "id": 8,
+            "price": 350,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/368236/jogo-god-of-war-ragnar-k-ps4_1657902975_gg.jpg"
+        },
+        {
+            "name": "Volante de Jogos NOX Krom K-Wheel",
+            "description": "para PS4, PS3, Xbox One, PC - NXKROMKWHL",
+            "id": 9,
+            "price": 1200,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/99393/99393_1544445633_index_gg.jpg"
+        },
+        {
+            "name": "Console Microsoft Xbox Series X",
+            "description": "1TB, Preto - RRT-00006",
+            "id": 10,
+            "price": 4000,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/128560/console-microsoft-xbox-series-x-1tb-preto-rrt-00006_1601067024_gg.jpg"
+        }
+    ],
+    "computadores": [
+        {
+            "name": "Monitor Gamer LG 26 IPS",
+            "description": "Ultra Wide, 75Hz, Full HD, 1ms, FreeSync Premium, HDR 10, 99% sRGB, HDMI, VESA - 26WQ500",
+            "id": 11,
+            "price": 800,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/371253/monitor-gamer-lg-26-ips-ultra-wide-75hz-full-hd-1ms-freesync-premium-hdr-10-99-srgb-hdmi-displayport-vesa-26wq500_1661181623_gg.jpg"
+        },
+        {
+            "name": "Notebook Asus AMD Ryzen 5-3500U",
+            "description": "8GB RAM, SSD 256GB, 15,6', Radeon Vega 8, Windows 11 Home, Cinza - M515DA-BR1213W",
+            "id": 12,
+            "price": 2400,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/334039/notebook-asus-amd-ryzen-5-3500u-8gb-ram-ssd-256gb-15-6-radeon-vega-8-windows-11-home-cinza-m515da-br1213w_1651244602_gg.jpg"
+        },
+        {
+            "name": "Monitor Gamer Husky Tempest 34' VA",
+            "description": "Ultrawide, 144 Hz, 2K QHD, 1ms, Adaptive Sync, 95% sRGB, HDMI/DisplayPort, Ajuste de Altura, Som - HGMT005",
+            "id": 13,
+            "price": 2000,
+            "qtd": 10,
+            "%off": 20,
+            "img": "https://images.kabum.com.br/produtos/fotos/135276/monitor-gamer-husky-tempest-led-34-ultrawide-curvo-wqhd-hdmi-dp-144hz-1ms-freesync-som-integrado-hgmt005_1629996852_gg.jpg"
+        },
+        {
+            "name": "Notebook Gamer Lenovo IdeaPad Gaming 3i Intel Core i5-10300H0",
+            "description": "GeForce GTX 1650, 8GB RAM, SSD 256GB, Tela 15.6 FHD, Linux, Azul - 82CGS0010",
+            "id": 14,
+            "price": 3600,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/156929/notebook-gamer-lenovo-gaming-3i-intel-core-i5-10300h-gtx-1650-4gb-8gb-ram-256gb-ssd-linux-16-9-widescreen-chameleon-blue-82cgs00100_1624476897_gg.jpg"
+        },
+        {
+            "name": "Multifuncional HP LaserJet Pro",
+            "description": "Laser, Colorida, Wi-Fi, 110V - M479fdw",
+            "id": 15,
+            "price": 4000,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/103328/multifuncional-hp-laserjet-pro-laser-colorida-wi-fi-110v-m479fdw-_multifuncional-hp-laserjet-pro-laser-colorida-wi-fi-110v-m479fdw-_1565810263_gg.jpg"
+        }
+    ],
+    "tv": [
+        {
+            "name": "Amazon Fire TV Stick Lite (2ª Geração) Full HD",
+            "description": "com Controle Remoto por Voz com Alexa, Preto - B091G767YB",
+            "id": 16,
+            "price": 250,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/319013/fire-tv-stick-lite-amazon-2-geracao-com-controle-remoto-por-voz-com-alexa-streaming-em-full-hd-preto-b091g767yb_1648580330_gg.jpg"
+        },
+        {
+            "name": "Smart TV Samsung 43 Polegadas UHD 4K",
+            "description": "3 HDMI, 1 USB, Processador Crystal 4K, Tela sem limites, Alexa, Controle Único - UN43AU7700GXZD",
+            "id": 17,
+            "price": 2050,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/154974/smart-tv-samsung-43-polegadas-uhd-4k-3-hdmi-1-usb-processador-crystal-4k-tela-sem-limites-alexa-controle-unico-un43au7700gxzd_1667248886_gg.jpg"
+        },
+        {
+            "name": "Smart TV Samsung 55 Polegadas 4K QLED",
+            "description": "4 HDMI, 120Hz, Processador IA, HDR10+, Tela Infinita, Alexa Built In - QN55Q80AAGXZD",
+            "id": 18,
+            "price": 3900,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/154390/smart-tv-samsung-55-4k-qled-55q80a-120hz-120hz-processador-ia-hdr10-tela-infinita-alexa-built-in-qn55q80aagxzd_1617280326_gg.jpg"
+        },
+        {
+            "name": "Smart TV TCL 50 Polegadas LED 4K UHD",
+            "description": "Google TV, 3 HDMI, 1 USB, Wi-Fi, Bluetooth, HDR, Google Assistente - 50P635",
+            "id": 19,
+            "price": 2300,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/370640/smart-google-tv-tcl-p635-led-50-4k-uhd-hdr-50p635_1663157381_gg.jpg"
+        },
+        {
+            "name": "Suporte TV Multiarticulado de Parede ELG",
+            "description": "para TV LED e LCD de 26 a 55 Polegadas, VESA 100 a 400, Preto - P400",
+            "id": 20,
+            "price": 120,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/163273/suporte-multiarticulado-de-parede-elg-para-tv-26-a-55-led-lcd-vesa-100-a-400-preto-p400_1625054151_gg.jpg"
+        }
+    ],
+    "ar-e-ventilacao": [
+        {
+            "name": "Ar Condicionado Portátil Elgin Eco Cub",
+            "description": "9000 BTUs, 110V - 45TCFN09B1NA",
+            "id": 21,
+            "price": 2000,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/108284/ar-condicionado-portatil-elgin-eco-cub-9000-btus-110v-45tcfn09b1na_1576668539_gg.jpg"
+        },
+        {
+            "name": "Ventilador de Coluna Oster Super Breeze",
+            "description": "127V, Preto - OVTR880",
+            "id": 22,
+            "price": 210,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/197235/ventilador-de-coluna-oster-super-breeze-127v-preto-ovtr880_1631121611_gg.jpg"
+        },
+        {
+            "name": "Ventilador Oster Super Breeze 2 em 1",
+            "description": "127V, Preto - OVTR480",
+            "id": 23,
+            "price": 150,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/197231/ventilador-oster-super-breeze-2-em-1-127v-preto-ovtr480_1629399443_gg.jpg"
+        },
+        {
+            "name": "Umidificador de Ar KaBuM! Smart 500",
+            "description": "Controle via aplicativo, Uso de Óleos Essenciais, Alexa e Google Assistant - KBSL000",
+            "id": 24,
+            "price": 260,
+            "qtd": 10,
+            "%off": 10,
+            "img": "https://images.kabum.com.br/produtos/fotos/210362/-pl-umidificador-de-ar-kabum-smart-500-kbsl000_1645563000_gg.jpg"
+        },
+        {
+            "name": "Ar Condicionado Gree Eco Garden Split",
+            "description": "24000 Btus, 220V, Frio - GWC24QE-D3NNB4B",
+            "id": 25,
+            "price": 3500,
+            "qtd": 10,
+            "%off": 30,
+            "img": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/285304/Ar-Condicionado-Gree-Eco-Garden-Split-24000-Btus-220V-Frio-GWC24QE-D3NNB4B_1666181924_gg.jpg"
+        }
+    ]
+}

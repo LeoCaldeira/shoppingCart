@@ -1,0 +1,65 @@
+@use 'theme/colors.scss' as *;
+@use 'theme/sizes.scss' as *;
+
+.card-wrapper {
+    border: 3px solid rgb(248, 248, 248);
+    background-color: $light;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 250px;
+    margin: 5px;
+
+    .image-wrapper {
+        border: 2px solid $violet-100;
+        max-height: 40%;
+        background-color: $light;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+
+        img {
+            padding: 10px;
+            max-height: 110px;
+        }
+    }
+
+    h2 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-height: 37px;
+    }
+
+    p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 10px 0;
+    }
+
+    .old-product-price {
+        max-height: 20px;
+        text-decoration: line-through;
+    }
+
+    .product-price {
+        max-height: 40px;
+        font-size: 36px;
+        font-weight: 700;
+        color: $violet-900;
+    }
+
+    button {
+        border-radius: 8px;
+        width: 100%;
+        outline: none;
+        border: none;
+        font-size: 28px;
+        background-color: $violet-600;
+        color: $light;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,7 @@
+@use 'theme/colors.scss' as *;
+@use 'theme/sizes.scss' as *;
+
+.products-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -9,12 +9,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    border-bottom: 2px solid $background;
 
     h1 {
         cursor: pointer;
     }
 
-    .cart-wrapper {
+    .header-cart-wrapper {
         padding: 5px 10px;
         background-color: $dark-background;
         border-radius: 4px;

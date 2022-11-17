@@ -4,7 +4,7 @@ import './Menu.scss'
 
 const Menu = () => {
     const navigate = useNavigate()
-    const currentPath = window.location.href.split('/')[1]
+    const currentPath = window.location.href.split('/')[3]
 
     return (
         <div className="menu-wrapper">
